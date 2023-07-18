@@ -4,8 +4,8 @@ JMP start
 message0  db "WELCOME TO THE NATIONAL GENERAL ELECTIONS!! $" 
 message01  db "KUMBUKA!! KURA YAKO SIRI YAKO!!! $" 
 message02  db "LET'S BEGIN!! $" 
-message1 db "PRESIDENT KENYATTA OR PRESIDENT RUTO: $"
-message2 db "KENYATTA    RUTO  $"
+message1 db "PRESIDENT KAMAU OR PRESIDENT LOSH: $"
+message2 db "KAMAU    LOSH  $"
 message3 db "GOVERNOR BANGE  OR GOVERNOR LOSHILU:  $" 
 message4 db "BANGE    LOSHILU  $"  
 message5 db "SENATOR ONYANGO  OR SENATOR KINUTHIA:  $" 
@@ -15,10 +15,10 @@ message8 db "KAMAU    NDUNG'U  $"
 message9 db "PRESIDENTIAL RESULTS$"  
 message10 db "GOVERNOR RESULTS$" 
 message100 db "SENATOR RESULTS$"      
-message11 db "HIGHEST IS KENYATTA WITH :$"
+message11 db "HIGHEST IS KAMAU WITH :$"
 message12 db "RUTO:$"
-message13 db "HIGHEST IS RUTO WITH:$"
-message14 db "KENYATTA:$"
+message13 db "HIGHEST IS LOSH WITH:$"
+message14 db "KAMAU:$"
 message15 db "HIGHEST IS BANGE WITH:$"
 message16 db "LOSHILU:$"
 message17 db "HIGHEST IS LOSHILU WITH:$"
@@ -29,7 +29,7 @@ message21 db "HIGHEST IS KINUTHIA WITH:$"
 message22 db "ONYANGO:$"  
 finishmsg1 db "AS IEBC WE ENSURE TRANSPARENCY IN THE VOTING PROCESS $"  
 finishmsg2 db  "THANK YOU FOR VOTING $"
-pres1 dw "KENYATTA"
+pres1 dw "KAMAU"
 gov1 dw  "BANGE"  
 sen1 dw  "ONYANGO"
 mp1  dw   "KAMAU"
@@ -676,7 +676,7 @@ PUTC 10
 PUTC 13
 PUTC 10
 PUTC 13  
-print "KENYATTA WITH:"
+print "KAMAU WITH:"
 MOV DL,count1
 ADD DL,30H
 MOV AH,2
